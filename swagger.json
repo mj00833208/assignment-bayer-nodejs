@@ -1,0 +1,45 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "NodeJS, MySQL & React Demo - Express API with Swagger",
+      "version": "0.1.0",
+      "description": "API for use with NodeJS, MySQL & React Demo Backend",
+      "license": {
+        "name": "NodeJS, MySQL & React Demo",
+        "url": "URL/license.html"
+      },
+      "contact": {
+        "name": "NodeJS, MySQL & React Demo",
+        "url": "URL",
+        "email": "contact@yourdomain"
+      }
+    },
+    "schemes": [
+      "http",
+      "https"
+    ],
+    "consumes": [
+      "application/json"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "servers": [
+      {
+        "url": "http://localhost:3000",
+        "description": "Development Server"
+      },
+      {
+        "url": "http://localhost:3000",
+        "description": "Cloud Development Server"
+      }
+    ],
+    "securityDefinitions": {
+          "Bearer": {
+              "type": "apiKey",
+              "description": "Value: Bearer ",
+              "name": "Authorization",
+              "in": "header"
+          }
+      }
+  }
